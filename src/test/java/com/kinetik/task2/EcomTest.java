@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class EcomTest {
     public static void main(String[] args) throws InterruptedException {
 
@@ -18,6 +20,7 @@ public class EcomTest {
 
         driver.get("https://automationexercise.com/");
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         // 3. Verify that home page is visible successfully
 
