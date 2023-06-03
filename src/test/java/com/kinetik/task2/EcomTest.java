@@ -93,6 +93,7 @@ public class EcomTest {
         WebElement webElement3 = driver.findElement(By.xpath("//*[@id=\"password\"]"));
         webElement3.clear();
         webElement3.sendKeys("12345qwert");
+        // Adding the delay for observing the output properly
         Thread.sleep(3000);
 
         driver.findElement(By.xpath("//*[@id=\"uniform-days\"]")).click();
