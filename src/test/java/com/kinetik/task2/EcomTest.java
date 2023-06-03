@@ -36,6 +36,7 @@ public class EcomTest {
         // Step 4: Add products to cart
         driver.findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/ul/li/a")).click();
         driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button")).click();
+        // Adding the delay for observing the output properly
         Thread.sleep(3000);
         driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[1]/div/div/div[3]/button")).click();
         Thread.sleep(3000);
@@ -76,11 +77,13 @@ public class EcomTest {
         WebElement webElement1 = driver.findElement(By.xpath("/html/body/section/div/div/div[3]/div/form/input[2]"));
         webElement1.clear();
         webElement1.sendKeys("Ali Ahsan");
+        // Adding the delay for observing the output properly
         Thread.sleep(3000);
 
         WebElement webElement2 = driver.findElement(By.xpath("/html/body/section/div/div/div[3]/div/form/input[3]"));
         webElement2.clear();
         webElement2.sendKeys("ali@ahsan.com");
+        // Adding the delay for observing the output properly
         Thread.sleep(3000);
 
         driver.findElement(By.xpath("/html/body/section/div/div/div[3]/div/form/button")).click();
